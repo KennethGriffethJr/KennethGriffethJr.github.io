@@ -1,0 +1,572 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:black;
+    font-family:Signika;
+}
+
+/* ======= Header Content ========= */
+
+#header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:black;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:25px;
+    
+}
+
+#left-header{
+        width:40%;
+        display:flex;
+        justify-content: flex-start;
+}
+
+#left-header h2{
+    display:flex;
+    align-items: center;
+    font-size:30px;
+    color:white;
+    font-family:"Pacifico";
+    background: -webkit-linear-gradient(45deg,#ffd800, #ca5129);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+#header-img{
+    height:55px;
+    margin-left:25px;
+    margin-right:50px;
+}
+#nav-bar{
+    margin-right:50px;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar ul {
+    list-style: none;
+    
+  
+}
+
+#nav-bar ul li{
+    display: inline-block;
+    margin-left: 100px;
+    color:#53c7d2;
+    position: relative;
+}
+#nav-bar ul li a{
+    color:#53c7d2;
+    text-decoration: none;
+    font-size:25px;
+    text-transform: uppercase;
+    transition: all ease-in-out 250ms;
+}
+
+
+#nav-bar ul li a:hover{
+    color:#ffd800;
+}
+
+#nav-bar ul li a::before {
+    content: '';
+    display:block;
+    height:3px;
+    width:0%;
+    background-color:#53c7d2;
+    position:absolute;
+    top:-13px;
+    transition: all ease-in-out 300ms;
+}
+
+#nav-bar ul li a:hover::before{
+    width:100%;
+}
+
+/* ========= Form Area ========== */
+
+#form-content{
+    margin-top:100px;
+    margin-bottom:50px;
+    background-color:;
+    display: flex;
+    justify-content: center;
+   
+}
+
+#form{
+    background-color:;   
+    width:50%; 
+    text-align:center;
+    padding-top:50px;
+    padding-bottom:100px;
+    
+
+}
+#form h2{
+    color:white;
+}
+
+#email{
+    display: block;
+    margin: 0 auto;
+    margin-top:30px;
+    margin-bottom:25px;
+    width:600px;
+    height:60px;
+    border-radius: 10px;
+    font-size:25px;
+    background:white;
+    color:black;
+    
+}
+
+#email:focus{
+    outline:none;
+    
+}
+
+#submit{
+    display:block;
+    margin:0 auto;
+    border:none;
+    width:150px;
+    height:50px;
+    border-radius:10px;
+    font-size:20px;
+    background:#5AA096;
+    transition: all ease-in-out 350ms;
+
+}
+
+#submit:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+    font-size:22px;
+    background:#49BAC0;
+    color:white;
+}
+
+
+hr{
+    margin:0 auto;
+    width:50%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+
+/* ======== Video =========== */
+
+#video-content{
+    margin-top:50px;
+    margin-bottom:100px;
+    background:;
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    text-align:center;
+}
+#video-content h2{
+    background:;
+    width:25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+}
+
+#video{
+    margin-top:50px;
+    background:;
+    height:400px;
+    width:800px;
+    border-radius:10px;
+}
+
+/* ======== Social ========= */
+
+#social{
+    padding-top:25px;
+    margin-top:70px;
+    background:;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#social h2{
+    
+    
+}
+
+#social ul{
+    list-style: none;
+}
+
+#social ul li{
+    display: inline-block;
+    padding:25px;
+}
+
+#social ul li a img{
+    width:75px;
+    transition: all ease-in-out 300ms
+}
+#social ul li a{
+   position:relative;
+}
+
+#social ul li a::before{
+    content: "";
+    display:block;
+    height:2px;
+    background-color:#ffd800;;
+    position: absolute;
+    top: 25px;
+    width:0%;
+    transition: all ease-in-out 350ms;
+}
+
+#social ul li a:hover::before{
+    width:100%;
+}
+
+
+
+#social ul li a img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* ============= Media Query =================== */
+
+@media(max-width:1680px){
+    #nav-bar{
+        margin-right:45px;
+    }
+    #header-img{
+        margin-right:25px;
+    }
+    
+    #nav-bar ul li a{
+        font-size:30px;
+    }
+    #left-header h2{
+        font-size:35px;
+    }
+    #nav-bar ul li{
+        margin-left:40px;
+        padding:0;
+    }
+    #form{
+        width:100%;
+        margin-bottom:50px;
+        padding-bottom:0;
+    }
+    #email{
+        width:35%;
+    }
+}
+@media(max-width:1200px){
+    #nav-bar{
+        margin-right:45px;
+    }
+    #header-img{
+        margin-right:25px;
+    }
+    
+    #nav-bar ul li a{
+        font-size:30px;
+    }
+    #left-header h2{
+        font-size:35px;
+    }
+    #nav-bar ul li{
+        margin-left:10px;
+        padding:0;
+    }
+    #form{
+        width:100%;
+        margin-bottom:50px;
+        padding-bottom:0;
+    }
+    #form-content{
+        margin-bottom:0px;
+    }
+    #email{
+        width:35%;
+    }
+    hr{
+        width:70%;
+    }
+
+    #form{
+        width:100%;
+        margin-bottom:50px;
+        padding-bottom:0;
+    }
+    #form-content{
+        margin-bottom:0px;
+    }
+    #email{
+        width:55%;
+    }
+    hr{
+        width:70%;
+    }
+    #video-content{
+        display:block;
+        margin-bottom:50px;
+    }
+    #video-content h2{
+        width:45%;
+        line-height: 1;
+        margin:0 auto;
+        text-align: center;
+        
+    }
+
+    #video{
+        margin: 0 auto;
+        height:600px;
+        width:650px;
+        margin-bottom:15px;
+    }
+    #social{
+        margin-top:15px;
+    }
+
+    #social ul li a img{
+        height:75px;
+        width:75px;
+    }
+
+    #social ul li{
+        padding:15px;
+    }
+    
+}
+
+
+@media(max-width:875px){
+    #nav-bar{
+        margin-right:45px;
+    }
+    #header-img{
+        margin-right:25px;
+    }
+    
+    #nav-bar ul li a{
+        font-size:20px;
+    }
+    #left-header h2{
+        font-size:25px;
+    }
+    #nav-bar ul li{
+        margin-left:15px;
+        padding:0;
+    }
+
+    #form{
+        width:100%;
+        margin-bottom:50px;
+        padding-bottom:0;
+    }
+
+    #email{
+        width:65%;
+    }
+
+    
+}
+@media(max-width:800px){
+    #form{
+        width:100%;
+        margin-bottom:50px;
+        padding-bottom:0;
+    }
+    #form-content{
+        margin-bottom:0px;
+    }
+    #email{
+        width:65%;
+    }
+    hr{
+        width:70%;
+    }
+    #video-content{
+        display:block;
+        margin-bottom:50px;
+    }
+    #video-content h2{
+        width:45%;
+        line-height: 1;
+        margin:0 auto;
+        text-align: center;
+        
+    }
+
+    #video{
+        margin: 0 auto;
+        height:400px;
+        width:450px;
+        margin-bottom:15px;
+    }
+    #social{
+        margin-top:15px;
+    }
+
+    #social ul li a img{
+        height:55px;
+        width:55px;
+    }
+
+    #social ul li{
+        padding:5px;
+    }
+}
+
+
+
+@media(max-width:675px){
+
+    #nav-bar{
+        margin-right:10px;
+    }
+    #header-img{
+        margin:0;
+    }
+    
+    #nav-bar ul li a{
+        font-size:17px;
+    }
+    #left-header h2{
+        font-size:25px;
+    }
+    #nav-bar ul li{
+        margin-left:5px;
+        padding:0;
+    }
+
+    #form{
+        width:100%;
+        margin-bottom:50px;
+        padding-bottom:0;
+    }
+    #email{
+        width:65%;
+    }
+}
+
+    @media(max-width:600px){
+        #form{
+            width:100%;
+            margin-bottom:50px;
+            padding-bottom:0;
+        }
+        #form-content{
+            margin-bottom:0px;
+        }
+        #email{
+            width:75%;
+        }
+        hr{
+            width:70%;
+        }
+        #video-content{
+            display:block;
+            margin-bottom:50px;
+        }
+        #video-content h2{
+            width:45%;
+            line-height: 1;
+            margin:0 auto;
+            text-align: center;
+            
+        }
+    
+        #video{
+            margin: 0 auto;
+            height:300px;
+            width:350px;
+            margin-bottom:15px;
+        }
+        #social{
+            margin-top:15px;
+        }
+    
+        #social ul li a img{
+            height:55px;
+            width:55px;
+        }
+    
+        #social ul li{
+            padding:5px;
+        }
+    }
+
+@media(max-width:550px){
+    #nav-bar{
+        margin-right:0;
+    }
+    #header-img{
+        margin:0;
+    }
+    #left-header h2{
+        font-size:10px;
+    }
+    #nav-bar ul li a{
+        font-size:15px;
+    }
+    #left-header h2{
+        font-size:25px;
+    }
+    #nav-bar ul li{
+        margin-left:0px;
+        padding:0;
+    }
+
+}
+
+@media(max-width:400px){
+    #left-header{
+        width:30%;
+    }
+    #header-img{
+        margin-right:0;
+    }
+    #left-header h2{
+        font-size:20px;
+    }
+    #nav-bar{
+        margin-right:0px;
+    }
+    #nav-bar ul li a{
+        font-size:12px;
+    }
+    
+    #nav-bar ul li{
+        margin:2px;
+        padding:0;
+    }
+
+}
+
+
+
+
+https://videos.pexels.com/videos/countdown-to-rocket-launching-854269
+https://www.iconfinder.com/icons/3285300/launch_rocket_space_spacecraft_spaceship_starship_startup_icon
